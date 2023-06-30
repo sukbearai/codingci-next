@@ -35,18 +35,18 @@
       - 基于coding的用户名和密码的身份认证，semantic-release将在ci中发布应用新版本
       - 配置凭证成功后，用 Jenkins 生成的凭证ID，替换 Jenkinsfile 的 JENKINS_GIT_USERNAMEPASSWORD_CREDENTIALS
   4. 修改Jenkinsfile其他变量
-    ```js
-      // 用户名和远程ip
-      REMOTE_HOST='yang@121.42.141.182'
-      // nginx的应用目录
-      REMOTE_DIR='/usr/local/nginx/jzypm'
-      // 应用的名称和.env的APP_NAME一致
-      APP_NAME='tempnext'
-    ```
+      ```js
+        // 用户名和远程ip
+        REMOTE_HOST='yang@121.42.141.182'
+        // nginx的应用目录
+        REMOTE_DIR='/usr/local/nginx/jzypm'
+        // 应用的名称和.env的APP_NAME一致
+        APP_NAME='tempnext'
+      ```
   5. 常见问题
-    - 初始化git之后请重新执行`npx husky install`激活钩子
-    - bash接入构建节点失败，请审查报错信息，或者将错误信息喂给chatgpt，让它指导你安装python、java和Git依赖
-    - 每次修改了APP_NAME请手动去远程服务器删除pm2应用进程，避免ci因端口问题而导致的部署失败
+    1. 初始化git之后请重新执行`npx husky install`激活钩子
+    2. bash接入构建节点失败，请审查报错信息，或者将错误信息喂给chatgpt，让它指导你安装python、java和Git依赖
+    3. 每次修改了APP_NAME请手动去远程服务器删除pm2应用进程，避免ci因端口问题而导致的部署失败
 
 ### Nextjs模板
 

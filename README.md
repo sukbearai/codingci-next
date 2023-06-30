@@ -20,7 +20,7 @@
     - 接入配置选**团队节点池**，方便其他项目复用同一个构建节点
     - 其余选项默认
   - 接入成功后，codingci会自动启动qci_worker服务,coding的节点池也会实时同步上线，并且每次开机重启，同时会在你的安装目录下生成一个codingci文件夹。
-5. 配置Jnekins
+5. 配置Jenkins
   1. [Jenkins的访问地址](http://localhost:15740/login?from=%2F)
   2. 默认账号密码: coding/11bf48c0403ec88231b530b5f98a113cad
   3. 配置凭证

@@ -44,6 +44,7 @@
         APP_NAME='tempnext'
       ```
   5. 常见问题
+     
     1. 初始化git之后请重新执行`npx husky install`激活钩子
     2. bash接入构建节点失败，请审查报错信息，或者将错误信息喂给chatgpt，让它指导你安装python、java和Git依赖
     3. 每次修改了APP_NAME请手动去远程服务器删除pm2应用进程，避免ci因端口问题而导致的部署失败

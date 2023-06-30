@@ -1,6 +1,6 @@
 {
   "name": "tempnext",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "一个基于Coding CI的NextJS模板",
   "main": "index.js",
   "scripts": {
